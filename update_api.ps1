@@ -57,7 +57,7 @@ foreach ($file in $files) {
     $content = Get-Content -Path $file.FullName -Raw
     
     # Replace import
-    $content = $content -replace 'import axios from '\''axios'\'';', 'import api from '\''../services/api'\'';'
+    $content = $content -replace "import axios from 'axios';", "import api from '../services/api';"
     
     # Replace API calls - removing http://127.0.0.1:8000/api/
     $content = $content -replace 'axios\.get\([''"`]http://127\.0\.0\.1:8000/api/', 'api.get('
