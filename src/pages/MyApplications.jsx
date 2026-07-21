@@ -1,7 +1,7 @@
 // frontend/src/pages/MyApplications.jsx
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import api from ../services/api;
 import PayButton from '../components/PayButton';
 import ReleasePaymentButton from '../components/ReleasePaymentButton';
 

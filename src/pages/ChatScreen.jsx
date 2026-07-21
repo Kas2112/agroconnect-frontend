@@ -1,7 +1,7 @@
 // frontend/src/pages/ChatScreen.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import api from ../services/api;
 
 const ChatScreen = () => {
   const { conversationId } = useParams();

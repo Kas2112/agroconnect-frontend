@@ -1,7 +1,7 @@
 // frontend/src/pages/ReceivedApplications.jsx
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import api from ../services/api;
 
 const ReceivedApplications = () => {
   const [apps, setApps] = useState([]);

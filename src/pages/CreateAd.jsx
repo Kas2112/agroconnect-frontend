@@ -1,7 +1,7 @@
 // frontend/src/pages/CreateAd.jsx
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import axios from 'axios';
+import api from ../services/api;
 import ImageUpload from '../components/ImageUpload';
 
 const CreateAd = () => {

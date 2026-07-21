@@ -1,7 +1,7 @@
 // frontend/src/pages/AdDetails.jsx
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import api from ../services/api;
 
 const AdDetails = () => {
   const { id } = useParams();
